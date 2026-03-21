@@ -238,6 +238,15 @@ install_nvidia_drivers() {
     read -p "Press Enter to continue..."
 }
 
+setup_keyboard() {
+    print_section "Configuring Keyboard (Caps → Ctrl)"
+
+    # Set layout + caps remap system-wide
+    sudo localectl set-x11-keymap es "" "" ctrl:nocaps
+
+    print_success "Caps Lock remapped to Ctrl (system-wide)"
+}
+
 install_pacman_packages() {
     print_section "Installing Official Repository Packages"
     
@@ -275,6 +284,9 @@ post_install() {
     print_section "Enabling System Services"
     sudo systemctl enable --now bluetooth
     sudo systemctl enable --now NetworkManager
+
+    # Keyboard setup
+    setup_keyboard
     
     # Add user to necessary groups (if not already)
     print_section "Configuring User Groups"

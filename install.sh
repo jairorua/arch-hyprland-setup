@@ -29,6 +29,7 @@ udisks2
 gvfs
 xdg-user-dirs
 pciutils  
+tree
 "
 
 # Hyprland ecosystem

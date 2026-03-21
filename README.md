@@ -16,12 +16,15 @@ Minimal, opinionated automated installer for Arch Linux with Hyprland window man
 pacman -S base base-devel linux linux-firmware git sudo vim
 # Then create user, add to wheel group, enable sudo, clone this repo
 
- Installation
+Installation
+
 # Clone anywhere (e.g., /tmp or your home dir)
+
 git clone https://github.com/YOUR_USERNAME/arch-hyprland-setup.git
 cd arch-hyprland-setup
 
 # Run main installer
+
 ./install.sh
 
 Note: Do not run with sudo ./install.sh. The script will prompt for elevation internally.
@@ -60,7 +63,9 @@ Login: Select Hyprland from SDDM (or run Hyprland from TTY if no display manager
 Complete dotfiles setup:
 
 # Your dotfiles should already be cloned via install_dotfiles.sh
+
 # If not, run:
+
 bash ~/arch-hyprland-setup/install_dotfiles.sh
 
 Set up Node.js versions:
@@ -70,6 +75,7 @@ nvm install node
 Configure Neovim (if using Lazy.nvim):
 
 nvim
+
 # Then :Lazy sync
 
 Configure Starship (optional):
@@ -81,13 +87,15 @@ Troubleshooting
 The script installs yay automatically. If it fails:
 
 rm -rf ~/.cache/yay
-./install.sh  # Re-run
+./install.sh # Re-run
 
 Hyprland won't start (NVIDIA users)
 NVIDIA requires proprietary drivers. This script installs hyprland-nvidia if available in repos, but you may need:
 
 sudo pacman -S nvidia-dkms nvidia-utils
+
 # Then rebuild initramfs
+
 sudo mkinitcpio -P
 
 Permission Denied (on scripts)
@@ -105,4 +113,9 @@ Idempotent: Safe to run multiple times (skips already-installed packages)
 Non-root: Script elevates privileges only when needed via sudo
 License
 MIT - Use freely, modify for your needs.
+
+```
+
+```
+
 ```

@@ -122,7 +122,6 @@ polkit-gnome
 grim
 slurp
 hyprpicker
-wlogout
 sddm
 "
 
@@ -145,6 +144,7 @@ brave-bin
 nvm
 grimblast
 hyprshot
+wlogout
 "
 
 # Helper functions

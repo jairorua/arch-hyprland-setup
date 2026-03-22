@@ -30,6 +30,7 @@ gvfs
 xdg-user-dirs
 pciutils  
 tree
+socat
 "
 
 # Hyprland ecosystem
@@ -118,7 +119,6 @@ obsidian
 HYPRLAND_GUI="
 waybar
 rofi-wayland
-dunst
 polkit-gnome
 grim
 slurp

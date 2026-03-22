@@ -97,24 +97,20 @@ configure_dotfiles() {
     print_success "Dotfiles configured"
 }
 
-setup_shell_alias() {
-    local alias_def="alias dotfilesconfig='/usr/bin/git --git-dir=\$HOME/.dotfiles/ --work-tree=\$HOME'"
-    
-    # Detect shell
-    local shell_rc=""
-    if [ -n "$ZSH_VERSION" ] || [ -f "$HOME/.zshrc" ]; then
-        shell_rc="$HOME/.zshrc"
+setup_shell_function() {
+    print_section "Configuring dotfiles function"
+
+    local zshrc="$HOME/.zshrc"
+
+    if [ -f "$zshrc" ]; then
+        if ! grep -q "dotfilesconfig()" "$zshrc"; then
+            print_error "dotfiles function not found in .zshrc"
+            echo "Please ensure your repo includes the dotfilesconfig function."
+        else
+            print_success "dotfiles function already configured in .zshrc"
+        fi
     else
-        shell_rc="$HOME/.bashrc"
-    fi
-    
-    if [ -f "$shell_rc" ] && ! grep -q "dotfilesconfig" "$shell_rc"; then
-        echo "" >> "$shell_rc"
-        echo "# Dotfiles management alias" >> "$shell_rc"
-        echo "$alias_def" >> "$shell_rc"
-        print_success "Added dotfilesconfig alias to $shell_rc"
-    else
-        print_success "Alias already exists in $shell_rc"
+        print_error ".zshrc not found"
     fi
 }
 
@@ -140,7 +136,7 @@ main() {
     setup_dotfiles
     backup_conflicts
     configure_dotfiles
-    setup_shell_alias
+    setup_shell_function
     install_plugins
     
     echo -e "\n${GREEN}✓ Complete!${NC}"

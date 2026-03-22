@@ -124,6 +124,7 @@ grim
 slurp
 hyprpicker
 sddm
+swaync
 "
 
 # Fonts

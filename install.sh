@@ -86,6 +86,7 @@ DEVELOPMENT="
 go
 sqlite
 python
+uv
 python-pip
 python-pynvim
 nodejs

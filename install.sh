@@ -39,6 +39,7 @@ hyprland
 hyprpaper
 hyprlock
 hypridle
+hyprshot
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 qt5-wayland

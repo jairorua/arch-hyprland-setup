@@ -80,6 +80,7 @@ yazi
 starship
 zsh
 neovim
+opencode
 "
 
 # Development (your requested list)

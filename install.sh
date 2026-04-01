@@ -115,6 +115,7 @@ pavucontrol
 obs-studio
 ghostty
 obsidian
+signal-desktop
 "
 
 # Hyprland specific GUI tools

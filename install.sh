@@ -31,6 +31,7 @@ xdg-user-dirs
 pciutils  
 tree
 socat
+lsof
 "
 
 # Hyprland ecosystem

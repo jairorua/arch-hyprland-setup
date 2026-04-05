@@ -154,6 +154,7 @@ nvm
 grimblast
 hyprshot
 wlogout
+pcloud-drive
 cryptomator
 "
 

@@ -32,6 +32,8 @@ pciutils
 tree
 socat
 lsof
+fuse2
+fuse3
 "
 
 # Hyprland ecosystem
@@ -152,6 +154,7 @@ nvm
 grimblast
 hyprshot
 wlogout
+cryptomator
 "
 
 # Helper functions

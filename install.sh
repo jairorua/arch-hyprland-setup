@@ -120,6 +120,7 @@ obs-studio
 ghostty
 obsidian
 signal-desktop
+spotify-launcher
 "
 
 # Hyprland specific GUI tools

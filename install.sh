@@ -84,6 +84,7 @@ starship
 zsh
 neovim
 opencode
+tree-sitter
 "
 
 # Development (your requested list)

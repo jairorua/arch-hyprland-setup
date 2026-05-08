@@ -64,6 +64,7 @@ bluez
 bluez-utils
 blueman
 network-manager-applet
+vlc
 "
 
 # Terminal & CLI tools (your requested list + enhancements)

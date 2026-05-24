@@ -106,6 +106,7 @@ ninja
 cmake
 gcc
 gdb
+git-delta
 "
 
 # GUI Applications (your requested list + essentials)

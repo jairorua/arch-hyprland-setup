@@ -18,6 +18,7 @@ AUR_DIR="$HOME/.cache/yay"
 CORE_SYSTEM="
 base-devel
 openssh
+ufw
 rsync
 wget
 curl
@@ -86,6 +87,7 @@ zsh
 neovim
 opencode
 tree-sitter
+tailscale
 "
 
 # Development (your requested list)

@@ -162,6 +162,8 @@ hyprshot
 wlogout
 pcloud-drive
 cryptomator
+proton-pass-bin
+codex-desktop-linux
 "
 
 # Helper functions

@@ -120,6 +120,7 @@ ffmpegthumbnailer
 imv
 zathura
 zathura-pdf-mupdf
+libreoffice-still
 pavucontrol
 obs-studio
 ghostty

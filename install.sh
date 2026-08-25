@@ -66,6 +66,7 @@ bluez-utils
 blueman
 network-manager-applet
 vlc
+vlc-plugin-ffmpeg
 "
 
 # Terminal & CLI tools (your requested list + enhancements)

@@ -23,7 +23,7 @@ rsync
 wget
 curl
 unzip
-p7zip
+7zip
 zip
 reflector
 pacman-contrib

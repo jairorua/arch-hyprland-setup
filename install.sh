@@ -24,6 +24,7 @@ wget
 curl
 unzip
 p7zip
+zip
 reflector
 pacman-contrib
 udisks2
@@ -116,6 +117,7 @@ git-delta
 GUI_APPS="
 thunar
 thunar-archive-plugin
+file-roller
 tumbler
 ffmpegthumbnailer
 imv

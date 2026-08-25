@@ -130,6 +130,7 @@ ghostty
 obsidian
 signal-desktop
 spotify-launcher
+gnome-keyring
 "
 
 # Hyprland specific GUI tools

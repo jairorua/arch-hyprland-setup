@@ -155,6 +155,7 @@ ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-dejavu
 ttf-font-awesome
+ttf-roboto
 papirus-icon-theme
 "
 
